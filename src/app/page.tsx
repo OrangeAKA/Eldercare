@@ -47,32 +47,37 @@ export default function Home() {
               <span className="text-ink-tertiary text-base">Free · 2 minutes · No login</span>
             </div>
 
-            {/* Saaya — companion app card */}
-            <div className="mt-10 max-w-[540px] bg-surface border border-border-subtle rounded-[14px] p-5 md:p-6">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center mt-0.5">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-terracotta">
-                    <path d="M10 2L16 5V10C16 13.5 13 16.5 10 18C7 16.5 4 13.5 4 10V5L10 2Z" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12" strokeLinejoin="round" />
-                    <path d="M7.5 10L9 11.5L12.5 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+            {/* Saaya — companion app card with narrative bridge */}
+            <div className="mt-10 max-w-[540px]">
+              <p className="text-ink-tertiary text-xs uppercase tracking-wide mb-3 font-semibold">
+                One thing you can do today
+              </p>
+              <div className="bg-surface border border-border-subtle rounded-[14px] p-5 md:p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="shrink-0 w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center mt-0.5">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-terracotta">
+                      <path d="M10 2L16 5V10C16 13.5 13 16.5 10 18C7 16.5 4 13.5 4 10V5L10 2Z" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12" strokeLinejoin="round" />
+                      <path d="M7.5 10L9 11.5L12.5 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-ink font-medium text-base md:text-lg mb-1">
+                      Saaya — scam call protection
+                    </p>
+                    <p className="text-ink-secondary text-sm leading-relaxed">
+                      Install on your parent&apos;s phone. It catches scam calls the moment a banking app opens. On-device only. No cloud.
+                    </p>
+                  </div>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-ink font-medium text-base md:text-lg mb-1">
-                    Saaya — scam call protection
-                  </p>
-                  <p className="text-ink-secondary text-sm leading-relaxed">
-                    An open-source Android companion that catches scam calls the moment a banking app opens. On-device only. No cloud.
-                  </p>
+                <div className="flex items-center gap-3 flex-wrap">
+                  <TrackedGitHubLink />
+                  <Link
+                    href="/saaya"
+                    className="text-ink-tertiary text-sm hover:text-ink transition-colors"
+                  >
+                    Learn more →
+                  </Link>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 flex-wrap">
-                <TrackedGitHubLink />
-                <Link
-                  href="/fraudguard"
-                  className="text-ink-tertiary text-sm hover:text-ink transition-colors"
-                >
-                  Learn more →
-                </Link>
               </div>
             </div>
           </section>

@@ -17,7 +17,7 @@ export function TrackedGitHubLink({ className = "" }: { className?: string }) {
 
   return (
     <a
-      href="https://github.com/orangeaka/fraud-guard"
+      href="https://github.com/OrangeAKA/saaya"
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}

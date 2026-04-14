@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Watermark } from "@/lib/watermark";
 import { AuthHeaderLink, LogoWithAuthLink } from "@/lib/auth-widgets";
 import { TrackedGitHubLink } from "@/lib/tracked-github-link";
-import { FraudguardStickyBar } from "./fraudguard-client";
+import { SaayaStickyBar } from "./saaya-client";
 
 export const metadata = {
   title: "Saaya — A companion app for scam calls | Inaya",
@@ -173,8 +173,8 @@ export default function SaayaPage() {
         </section>
       </div>
 
-      {/* Sticky bottom CTA bar — auth-aware */}
-      <FraudguardStickyBar />
+      {/* Sticky bottom CTA — stays in the Saaya flow */}
+      <SaayaStickyBar />
     </main>
   );
 }
